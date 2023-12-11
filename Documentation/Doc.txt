@@ -1,0 +1,44 @@
+Topic:- Implemention  the system and Data structures used in Memory file system Code:-
+                            
+                => The primary data structures used are objects and arrays. 
+    
+1.mkdir Command:-
+           *No explicit data structures are used 
+           *creating a directory using fs.mkdirSync().
+
+2.cd Command:-
+            *No explicit data structures 
+            *changes the current working directory using process.chdir().
+
+3.ls Command:-
+            *Data Structure:-Array
+            *The command uses an array (files) to store the list of files in the specified or current directory obtained through fs.readdirSync().
+
+4.grep Command:-
+            *Data Structure: RegExp, Array
+            *It uses a regular expression (RegExp) to match the specified pattern in the content of a file. The result is stored in an array (matches).
+
+5.cat Command:-
+            *No explicit data structures are used.
+            * It reads the content of a file using fs.readFileSync().
+
+6.touch Command:-
+            *No explicit data structures are used.
+            * It creates an empty file using fs.writeFileSync().
+    
+7.echo Command:-
+            *No explicit data structures are used.
+            * It writes text to a file using fs.writeFileSync().
+
+8.mv Command:-
+            *No explicit data structures are used. 
+            *It moves a file or directory using fs.renameSync().
+
+9.cp Command:-
+            *No explicit data structures are used. 
+            *It copies a file or directory using fs.copyFileSync().
+        
+10.rm Command:-
+            * No explicit data structures are used.
+            * It removes a file using `fs.unlinkSync()` for files.
+    -       * It removes a directory using `fs.rmdirSync()` for directories.
