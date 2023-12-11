@@ -1,0 +1,58 @@
+This is Setup of code file and Command of memory file system:-
+            =>I used node.js  for built memory file system
+
+for setup of code :- 
+        *only run 1 command on folder:-
+            npm install yargs
+
+yargs:-Yargs helps you build interactive command line tools by parsing arguments and generating an elegant user interface.
+
+yargs Documentation:-https://github.com/yargs/yargs
+
+
+Important Note:-Just run my example in your terminal its proper works
+Command required to run program in terminal:-
+
+
+1.mkdir(create a new directory) operation:-
+    *Syntax:-  node jsfile_name mkdir --directory create_file_name
+    *Example:- node index.js mkdir --directory file
+
+2.cd(change the directory) operation:-
+    *syntax:-  node jsfile_name cd --directory file_name
+    *Example:- node index.js cd --directory file
+
+3.ls(List the contents of the current directory) operation:-
+    *syntax:- node jsfile_name ls
+    *Example:- node index.js ls
+
+4.grep(Search for a specified pattern in a file) operation:-
+    *syntax:- node jsfile_name grep --pattern "pattern_content" --file file_name
+    *Example:- node index.js grep --pattern "Dhirendra" --file Demo/file.txt
+
+5.cat(Display the contents of a file) operation:-
+    *syntax:- node jsfile_name cat --file file_name
+    *Example:- node index.js cat --file Demo/file.txt
+
+6.touch(Create a new empty file) operation:- 
+    *syntax:- node jsfile_name touch --file file_name
+    *Example:- node index.js touch --file main.html
+
+7.echo(Write text to a file) operation:-
+    *syntax:-  node jsfile_name echo --text "text_content" --file file_name
+    *Example:- node index.js echo --text "This is html page Keep code form here of home page " --file main.html
+
+8.mv(Move a file or directory to another location) operation:-
+    *syntax:-  node jsfile_name  mv --source source_fileName --destination destination_fileName
+
+    *Example:- node index.js mv --source main.html --destination file/main.html
+
+9.cp(Copy a file or directory to another location) operation:-
+    *Syntax:- node jsfile_name  cp --source source_fileName --destination destination_fileName
+
+    *Example:- node index.js cp --source file/main.html --destination main.html
+
+10.rm(Remove the file form directory) operation:-
+    *Syntax:-node jsfile_name rm --path file_name
+    *Example:-node index.js rm --path file
+
