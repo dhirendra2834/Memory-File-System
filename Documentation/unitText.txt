@@ -1,0 +1,115 @@
+-:Unit Tests - You stand out if you write them. 🙌🙌🙌🙌:-
+
+
+Unit Tests:- Units tests are the one source of truth and can even be used to verify that the documentation is correct
+
+In the Below i define the Unit test on every operation:-
+
+
+1.mkdir(Create a new directory) Unit Test:-
+
+        =>Imagine telling your program to create a directory.
+            *Syntax of mkdir command operation:-
+                node jsfile_name mkdir --directory create_file_name
+             *Example:- node index.js mkdir --directory file
+
+        =>Then, check if the directory was actually created.
+
+
+2.cd (Changes the current directory)Unit Test:-
+
+        =>Tell your program to change the current directory to a specific one.
+            *Syntax of cd command operation:-
+                node jsfile_name cd --directory file_name
+
+             *Example:- node index.js cd --directory file
+
+        =>Verify if the program indeed moved to the correct directory.
+
+3.ls(List the contents of the current directory or a specified directory) Unit Test:-
+
+        =>Ask your program to list the contents of a directory.
+            *Syntax of ls command operation:-
+                node jsfile_name ls
+             *Example:- node index.js ls
+
+        =>Check if the list matches what you expect.
+
+4.grep(Search for a specified pattern in a file) Unit Test:-
+
+        =>Create a file with known content.
+        =>Use the "grep" command to search for a specific pattern in that file.
+        =>Confirm if the matches are what you anticipated.
+            *Syntax of grep command operation:-
+                node jsfile_name grep --pattern "pattern_content" --file file_name
+             *Example:- 
+              node index.js grep --pattern "Dhirendra" --file demo/file.txt
+
+5.cat(Display the contents of a file) Unit Test:-
+
+        =>Write some content to a file.
+        =>Use the "cat" command to display the file's content.
+            *Syntax of cat command operation:-
+                node jsfile_name cat --file file_name
+
+            *Example:- node index.js cat --file demo/file.txt
+          
+        =>Ensure that what is displayed matches what you wrote.
+
+
+6.touch(Create a new empty file) Unit Test:-
+
+        =>Command your program to create an empty file.
+            *syntax of touch command operation:-
+                node jsfile_name touch --file file_name
+
+             *Example:- node index.js touch --file main.html
+
+        =>Confirm that the file was created.
+
+
+7.echo(Write text to a file) Unit Test:-
+
+        =>Write some text to a file using the "echo" command.
+            *syntax of echo command operation:-
+                node jsfile_name echo --text "text_content" --file file_name
+
+            *Example:- node index.js echo --text "This is html page Keep code form here of home page " --file main.html
+
+        =>Check if the text is indeed written to the file.
+
+
+8.mv(Move a file or directory to another location) Unit Test:-
+
+        =>Move a file or directory to a new location.
+            *syntax of mv(move) command  operation
+                node jsfile_name  mv --source source_fileName --destination destination_fileName
+
+               
+             *Example:- node index.js mv --source main.html --destination file/main.html
+
+
+        =>Verify that the file or directory is now in the expected place.
+
+
+9.cp Unit Test:
+
+        =>Copy a file or directory to another location.
+            *syntax of cp(Copy) command operation:-
+                node jsfile_name cp --source source_fileName --destination destination_fileName
+                (Same syntax like mv command but only replace in place of mv = cp )
+        
+              *Example:- node index.js cp --source file/main.html --destination main.html
+
+        =>Check if the copied file or directory exists in the new location.
+
+
+10:-rm(Remove the file form directory) Unit Test:
+
+        =>Remove a file or directory.
+            *Syntax of rm(Remove) command operation:-
+                node jsfile_name rm --path file_name
+
+             *Example:-node index.js rm --path file
+
+        =>Ensure that the file or directory is deleted as expected.
